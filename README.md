@@ -12,7 +12,7 @@
 ## 🚀 التثبيت
 
 ```bash
-git clone https://github.com/AissamNedjar/chaque.git
+git clone https://github.com/AissamNedjar/postedz_chaque.git
 cd chaque
 npm install
 npm run dev
