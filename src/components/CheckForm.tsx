@@ -123,13 +123,71 @@ const CheckForm: React.FC<CheckFormProps> = ({
             </div>
             مكان التحرير
           </label>
-          <input
-            type="text"
-            value={checkData.place}
-            onChange={(e) => handleInputChange('place', e.target.value)}
-            placeholder="مثال: الجزائر العاصمة"
-            className="w-full px-3 md:px-4 py-2.5 md:py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 transition-all duration-300 text-sm font-medium bg-white/80 backdrop-blur-sm mobile-input"
-          />
+          <select
+              value={checkData.place}
+              onChange={(e) => handleInputChange('place', e.target.value)}
+              className="w-full px-3 md:px-4 py-2 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 transition-all duration-300 text-sm font-medium bg-white/80 backdrop-blur-sm mobile-input"
+          >
+            <option value="" disabled hidden>اختر الولاية</option>
+            <option value="أدرار">أدرار</option>
+            <option value="الشلف">الشلف</option>
+            <option value="الأغواط">الأغواط</option>
+            <option value="أم البواقي">أم البواقي</option>
+            <option value="باتنة">باتنة</option>
+            <option value="بجاية">بجاية</option>
+            <option value="بسكرة">بسكرة</option>
+            <option value="بشار">بشار</option>
+            <option value="البليدة">البليدة</option>
+            <option value="البويرة">البويرة</option>
+            <option value="تمنراست">تمنراست</option>
+            <option value="تبسة">تبسة</option>
+            <option value="تلمسان">تلمسان</option>
+            <option value="تيارت">تيارت</option>
+            <option value="تيزي وزو">تيزي وزو</option>
+            <option value="الجزائر">الجزائر</option>
+            <option value="الجلفة">الجلفة</option>
+            <option value="جيجل">جيجل</option>
+            <option value="سطيف">سطيف</option>
+            <option value="سعيدة">سعيدة</option>
+            <option value="سكيكدة">سكيكدة</option>
+            <option value="سيدي بلعباس">سيدي بلعباس</option>
+            <option value="عنابة">عنابة</option>
+            <option value="قالمة">قالمة</option>
+            <option value="قسنطينة">قسنطينة</option>
+            <option value="المدية">المدية</option>
+            <option value="مستغانم">مستغانم</option>
+            <option value="المسيلة">المسيلة</option>
+            <option value="معسكر">معسكر</option>
+            <option value="ورقلة">ورقلة</option>
+            <option value="وهران">وهران</option>
+            <option value="البيض">البيض</option>
+            <option value="إليزي">إليزي</option>
+            <option value="برج بوعريريج">برج بوعريريج</option>
+            <option value="بومرداس">بومرداس</option>
+            <option value="الطارف">الطارف</option>
+            <option value="تندوف">تندوف</option>
+            <option value="تيسمسيلت">تيسمسيلت</option>
+            <option value="الوادي">الوادي</option>
+            <option value="خنشلة">خنشلة</option>
+            <option value="سوق أهراس">سوق أهراس</option>
+            <option value="تيبازة">تيبازة</option>
+            <option value="ميلة">ميلة</option>
+            <option value="عين الدفلى">عين الدفلى</option>
+            <option value="النعامة">النعامة</option>
+            <option value="عين تموشنت">عين تموشنت</option>
+            <option value="غرداية">غرداية</option>
+            <option value="غليزان">غليزان</option>
+            <option value="تيميمون">تيميمون</option>
+            <option value="برج باجي مختار">برج باجي مختار</option>
+            <option value="أولاد جلال">أولاد جلال</option>
+            <option value="بني عباس">بني عباس</option>
+            <option value="عين صالح">عين صالح</option>
+            <option value="عين قزام">عين قزام</option>
+            <option value="تقرت">تقرت</option>
+            <option value="جانت">جانت</option>
+            <option value="المغير">المغير</option>
+            <option value="المنيعة">المنيعة</option>
+          </select>
           {showPositionControls && (
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-2 md:p-3 rounded-xl space-y-2 border border-green-100">
               <div className="flex items-center gap-2 mb-2">
